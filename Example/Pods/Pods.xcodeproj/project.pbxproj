@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		532E845191E938D5061A87807838E23B /* LCContactExchangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBE9B88810F476EC01158069D41154D /* LCContactExchangeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AEC44F1377C862190D178157BD7DFF /* LCContactExchangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EABF722E57A8F1DDDC9FFFE7736CC9 /* LCContactExchangeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37B55EAF482FD1E8F87E349F8812B27F /* LCBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BD7F2F110190814D16F475D51BD1D1 /* LCBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E126B24D53FA29F8787BC3AB86E4B91 /* CodeDirectory in Sources */ = {isa = PBXBuildFile; fileRef = 703F0FAF03D020A38B3237FD2A6443A8 /* CodeDirectory */; };
+		5EC26A287AE195859B5BF8DE2331A61C /* LoopdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E458DADF59EA4BCB1D718BC2142E1AFD /* LoopdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB3DFD48B79C7FB10D7595BF728246A /* CodeResources in Sources */ = {isa = PBXBuildFile; fileRef = B85C4AD0A4EA85E0C436DC13C3A20249 /* CodeResources */; };
 		6534C0B609D397394CB177566F445843 /* Pods-LoopdSDK_Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F0490504A19BE374D305D7ACB7D0D /* Pods-LoopdSDK_Demo-dummy.m */; };
-		67DDBF9015D19046D08C88DFB5D8F61C /* LCScanningConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E95D27AD88D62DD1E4CBA9953647EA /* LCScanningConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68888130EAC6F13AEF5F72F3D72CD63E /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F69378A55484475980234912838DD /* ReplaceMe.m */; };
-		6CDC691EB7FD4FB54AB7101431BACEE7 /* LCBadgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF111CD94D9144BE63B6A8E2FEF7306 /* LCBadgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D7CF6FE8044CABFEF5A7C577F0D3821 /* CodeResources in Sources */ = {isa = PBXBuildFile; fileRef = 10698D33F78D4A971E5567997450DE5B /* CodeResources */; };
-		87867248D46FE04B2C89E1795774D5DF /* LoopdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3994781AB8EF8F9627C249A7DCFD40 /* LoopdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C10DA9CD170CE74E5D1EEFBB0ECE80D /* LoopdSDK in Sources */ = {isa = PBXBuildFile; fileRef = 22104F15D6FD6C35F02C92B9D2343553 /* LoopdSDK */; };
-		8D259E369487B21DB10C2890A6EB3039 /* CodeRequirements in Sources */ = {isa = PBXBuildFile; fileRef = 8ADDED8F60E30F1510A3D53962E6D282 /* CodeRequirements */; };
+		6575FD57EDAA1104D3BC32C004914FE4 /* CodeRequirements in Sources */ = {isa = PBXBuildFile; fileRef = 0B35D58766E1C1A366F71453C7E74B97 /* CodeRequirements */; };
+		68888130EAC6F13AEF5F72F3D72CD63E /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE342394359A8735617398ACE24B895 /* ReplaceMe.m */; };
+		6DEFE75D224125B35C6D6366A3730036 /* CodeSignature in Sources */ = {isa = PBXBuildFile; fileRef = A4123B973BE8900663A0608227276E66 /* CodeSignature */; };
+		747382A32A1B90716F880A74BA59AA1A /* LoopdSDK in Sources */ = {isa = PBXBuildFile; fileRef = CB8C8D1D7EA54C29444BA8344372C2B7 /* LoopdSDK */; };
 		9234118FAD1C66490DB0A739C577B1DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		99841229D0A90A764445A55888741310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		ADEDC65C66D0FADC620DB746304D6554 /* CodeSignature in Sources */ = {isa = PBXBuildFile; fileRef = AE0A233F0A85679D951B5BCDEFBA186B /* CodeSignature */; };
-		C451C1944769099DCF9D75773CB3D945 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F0F95AC98A699FAE3AE200AA5FEE5A02 /* module.modulemap */; };
-		E101C71B82659787A73F0F3984415F2E /* CodeDirectory in Sources */ = {isa = PBXBuildFile; fileRef = 79E5EFFBB392A9A21DEB245B746D8CD5 /* CodeDirectory */; };
-		E25D0F5C57A6148F3184CA6154FC9803 /* LoopdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D172A6BD0281B72402D0DB1B08D6A39 /* LoopdSDK-dummy.m */; };
-		E2F1F29A91E169BBBDD4DE5545570EC3 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 15D3FC080FBC1B0CD6A803F12FDA8539 /* Info.plist */; };
-		FCC827155E0CFC941C47004BF48A5CC7 /* LCBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6F630CDA914EFC3D79B09F5C399D26 /* LCBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8E43551F73689B92C6C56962CD3864 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0D58FAFD56C422E9B1AA40D5716A /* Info.plist */; };
+		E25D0F5C57A6148F3184CA6154FC9803 /* LoopdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA71482B7F0CE9E274620596939AF2 /* LoopdSDK-dummy.m */; };
+		EF01C41B2910AEF087A0DBB1922C7657 /* LCBadgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB8059078749314BA0BBE2C7A3DCAF0 /* LCBadgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F199CCEA483D933725D350997AEAD1E7 /* LCScanningConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E6254CA1AF17D873BEE4E8BB86B4D43E /* LCScanningConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3EDD66B4173E970A3BF21E8B4CE21D8 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = AB811A304777E24E230D8DD1682E3BE2 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,32 +38,32 @@
 
 /* Begin PBXFileReference section */
 		017CFCE181817DCB5359AF0F19B1F662 /* libLoopdSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLoopdSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D172A6BD0281B72402D0DB1B08D6A39 /* LoopdSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoopdSDK-dummy.m"; sourceTree = "<group>"; };
-		10698D33F78D4A971E5567997450DE5B /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = CodeResources; path = Pod/Classes/LoopdSDK.framework/_CodeSignature/CodeResources; sourceTree = "<group>"; };
-		15D3FC080FBC1B0CD6A803F12FDA8539 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Classes/LoopdSDK.framework/Info.plist; sourceTree = "<group>"; };
-		22104F15D6FD6C35F02C92B9D2343553 /* LoopdSDK */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = LoopdSDK; path = Pod/Classes/LoopdSDK.framework/LoopdSDK; sourceTree = "<group>"; };
-		28E95D27AD88D62DD1E4CBA9953647EA /* LCScanningConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCScanningConfig.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCScanningConfig.h; sourceTree = "<group>"; };
+		0B35D58766E1C1A366F71453C7E74B97 /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeRequirements; path = Pod/Classes/framework/LoopdSDK.framework/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
+		2EE342394359A8735617398ACE24B895 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		38521A80B2421371CCB9BA6D35546209 /* Pods-LoopdSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoopdSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		3C3994781AB8EF8F9627C249A7DCFD40 /* LoopdSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoopdSDK.h; path = Pod/Classes/LoopdSDK.framework/Headers/LoopdSDK.h; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4241968FC91DB4E715B5E2A6EEBC0CB0 /* Pods-LoopdSDK_Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoopdSDK_Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F6E0A9C79FAD7FB4E610092844C7CC5 /* LoopdSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoopdSDK.xcconfig; sourceTree = "<group>"; };
+		4E73D3BD281F0F97189027277D631AE3 /* LoopdSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoopdSDK-prefix.pch"; sourceTree = "<group>"; };
 		604F0490504A19BE374D305D7ACB7D0D /* Pods-LoopdSDK_Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoopdSDK_Demo-dummy.m"; sourceTree = "<group>"; };
+		66EABF722E57A8F1DDDC9FFFE7736CC9 /* LCContactExchangeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCContactExchangeManager.h; path = Pod/Classes/framework/LoopdSDK.framework/Headers/LCContactExchangeManager.h; sourceTree = "<group>"; };
 		6C8756C6BBE9A0C3F119A11935D4EDF8 /* Pods-LoopdSDK_Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoopdSDK_Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		79E5EFFBB392A9A21DEB245B746D8CD5 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeDirectory; path = Pod/Classes/LoopdSDK.framework/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
-		7A6F630CDA914EFC3D79B09F5C399D26 /* LCBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadge.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCBadge.h; sourceTree = "<group>"; };
-		7DB3DA6CD587527F576A12463BDC7A58 /* LoopdSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoopdSDK-prefix.pch"; sourceTree = "<group>"; };
+		703F0FAF03D020A38B3237FD2A6443A8 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeDirectory; path = Pod/Classes/framework/LoopdSDK.framework/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
+		71CA71482B7F0CE9E274620596939AF2 /* LoopdSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoopdSDK-dummy.m"; sourceTree = "<group>"; };
 		8606D51D5C7E065A683677FB4FCE0A95 /* Pods-LoopdSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoopdSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
-		8ADDED8F60E30F1510A3D53962E6D282 /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeRequirements; path = Pod/Classes/LoopdSDK.framework/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
-		8EBE9B88810F476EC01158069D41154D /* LCContactExchangeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCContactExchangeManager.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCContactExchangeManager.h; sourceTree = "<group>"; };
-		922F69378A55484475980234912838DD /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		94BD7F2F110190814D16F475D51BD1D1 /* LCBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadge.h; path = Pod/Classes/framework/LoopdSDK.framework/Headers/LCBadge.h; sourceTree = "<group>"; };
 		9ADAB796F804F4F96AB5C7343DDB5285 /* libPods-LoopdSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoopdSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE0A233F0A85679D951B5BCDEFBA186B /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeSignature; path = Pod/Classes/LoopdSDK.framework/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
+		A4123B973BE8900663A0608227276E66 /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeSignature; path = Pod/Classes/framework/LoopdSDK.framework/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
+		AB811A304777E24E230D8DD1682E3BE2 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Pod/Classes/framework/LoopdSDK.framework/Modules/module.modulemap; sourceTree = "<group>"; };
+		B85C4AD0A4EA85E0C436DC13C3A20249 /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = CodeResources; path = Pod/Classes/framework/LoopdSDK.framework/_CodeSignature/CodeResources; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4DFB9A7D9E37EDBEDC19229DA7CF932 /* Pods-LoopdSDK_Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoopdSDK_Demo-frameworks.sh"; sourceTree = "<group>"; };
+		C5AEA0A455A3C53015AAA4DC614FFB67 /* LoopdSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoopdSDK.xcconfig; sourceTree = "<group>"; };
+		CB8C8D1D7EA54C29444BA8344372C2B7 /* LoopdSDK */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = LoopdSDK; path = Pod/Classes/framework/LoopdSDK.framework/LoopdSDK; sourceTree = "<group>"; };
 		D133BAB259D6BBE6C419FD972C703F61 /* Pods-LoopdSDK_Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoopdSDK_Demo-resources.sh"; sourceTree = "<group>"; };
-		F0F95AC98A699FAE3AE200AA5FEE5A02 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Pod/Classes/LoopdSDK.framework/Modules/module.modulemap; sourceTree = "<group>"; };
-		FDF111CD94D9144BE63B6A8E2FEF7306 /* LCBadgeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadgeManager.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCBadgeManager.h; sourceTree = "<group>"; };
+		E458DADF59EA4BCB1D718BC2142E1AFD /* LoopdSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoopdSDK.h; path = Pod/Classes/framework/LoopdSDK.framework/Headers/LoopdSDK.h; sourceTree = "<group>"; };
+		E6254CA1AF17D873BEE4E8BB86B4D43E /* LCScanningConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCScanningConfig.h; path = Pod/Classes/framework/LoopdSDK.framework/Headers/LCScanningConfig.h; sourceTree = "<group>"; };
+		EBB8059078749314BA0BBE2C7A3DCAF0 /* LCBadgeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadgeManager.h; path = Pod/Classes/framework/LoopdSDK.framework/Headers/LCBadgeManager.h; sourceTree = "<group>"; };
+		F3BD0D58FAFD56C422E9B1AA40D5716A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Classes/framework/LoopdSDK.framework/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,42 +86,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BC9E0ECE7E6EFF4B98A3FCA7CBC6B46 /* Pods */ = {
+		35EDE90A58EA2F3FB0EC503BF2EBB9B1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7D2D8CCF2337DE350D46A4B72842F342 /* LoopdSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		50A13F9C2D58B45E0F436890E6743A03 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F6E0A9C79FAD7FB4E610092844C7CC5 /* LoopdSDK.xcconfig */,
-				0D172A6BD0281B72402D0DB1B08D6A39 /* LoopdSDK-dummy.m */,
-				7DB3DA6CD587527F576A12463BDC7A58 /* LoopdSDK-prefix.pch */,
+				C5AEA0A455A3C53015AAA4DC614FFB67 /* LoopdSDK.xcconfig */,
+				71CA71482B7F0CE9E274620596939AF2 /* LoopdSDK-dummy.m */,
+				4E73D3BD281F0F97189027277D631AE3 /* LoopdSDK-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LoopdSDK";
 			sourceTree = "<group>";
 		};
-		7D2D8CCF2337DE350D46A4B72842F342 /* LoopdSDK */ = {
+		4BC9E0ECE7E6EFF4B98A3FCA7CBC6B46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79E5EFFBB392A9A21DEB245B746D8CD5 /* CodeDirectory */,
-				8ADDED8F60E30F1510A3D53962E6D282 /* CodeRequirements */,
-				10698D33F78D4A971E5567997450DE5B /* CodeResources */,
-				AE0A233F0A85679D951B5BCDEFBA186B /* CodeSignature */,
-				15D3FC080FBC1B0CD6A803F12FDA8539 /* Info.plist */,
-				7A6F630CDA914EFC3D79B09F5C399D26 /* LCBadge.h */,
-				FDF111CD94D9144BE63B6A8E2FEF7306 /* LCBadgeManager.h */,
-				8EBE9B88810F476EC01158069D41154D /* LCContactExchangeManager.h */,
-				28E95D27AD88D62DD1E4CBA9953647EA /* LCScanningConfig.h */,
-				22104F15D6FD6C35F02C92B9D2343553 /* LoopdSDK */,
-				3C3994781AB8EF8F9627C249A7DCFD40 /* LoopdSDK.h */,
-				F0F95AC98A699FAE3AE200AA5FEE5A02 /* module.modulemap */,
-				922F69378A55484475980234912838DD /* ReplaceMe.m */,
-				50A13F9C2D58B45E0F436890E6743A03 /* Support Files */,
+				6C43FEB34DAC874542B1F48E00554C35 /* LoopdSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C43FEB34DAC874542B1F48E00554C35 /* LoopdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				703F0FAF03D020A38B3237FD2A6443A8 /* CodeDirectory */,
+				0B35D58766E1C1A366F71453C7E74B97 /* CodeRequirements */,
+				B85C4AD0A4EA85E0C436DC13C3A20249 /* CodeResources */,
+				A4123B973BE8900663A0608227276E66 /* CodeSignature */,
+				F3BD0D58FAFD56C422E9B1AA40D5716A /* Info.plist */,
+				94BD7F2F110190814D16F475D51BD1D1 /* LCBadge.h */,
+				EBB8059078749314BA0BBE2C7A3DCAF0 /* LCBadgeManager.h */,
+				66EABF722E57A8F1DDDC9FFFE7736CC9 /* LCContactExchangeManager.h */,
+				E6254CA1AF17D873BEE4E8BB86B4D43E /* LCScanningConfig.h */,
+				CB8C8D1D7EA54C29444BA8344372C2B7 /* LoopdSDK */,
+				E458DADF59EA4BCB1D718BC2142E1AFD /* LoopdSDK.h */,
+				AB811A304777E24E230D8DD1682E3BE2 /* module.modulemap */,
+				2EE342394359A8735617398ACE24B895 /* ReplaceMe.m */,
+				35EDE90A58EA2F3FB0EC503BF2EBB9B1 /* Support Files */,
 			);
 			path = LoopdSDK;
 			sourceTree = "<group>";
@@ -192,11 +192,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC827155E0CFC941C47004BF48A5CC7 /* LCBadge.h in Headers */,
-				6CDC691EB7FD4FB54AB7101431BACEE7 /* LCBadgeManager.h in Headers */,
-				532E845191E938D5061A87807838E23B /* LCContactExchangeManager.h in Headers */,
-				67DDBF9015D19046D08C88DFB5D8F61C /* LCScanningConfig.h in Headers */,
-				87867248D46FE04B2C89E1795774D5DF /* LoopdSDK.h in Headers */,
+				37B55EAF482FD1E8F87E349F8812B27F /* LCBadge.h in Headers */,
+				EF01C41B2910AEF087A0DBB1922C7657 /* LCBadgeManager.h in Headers */,
+				20AEC44F1377C862190D178157BD7DFF /* LCContactExchangeManager.h in Headers */,
+				F199CCEA483D933725D350997AEAD1E7 /* LCScanningConfig.h in Headers */,
+				5EC26A287AE195859B5BF8DE2331A61C /* LoopdSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E101C71B82659787A73F0F3984415F2E /* CodeDirectory in Sources */,
-				8D259E369487B21DB10C2890A6EB3039 /* CodeRequirements in Sources */,
-				6D7CF6FE8044CABFEF5A7C577F0D3821 /* CodeResources in Sources */,
-				ADEDC65C66D0FADC620DB746304D6554 /* CodeSignature in Sources */,
-				E2F1F29A91E169BBBDD4DE5545570EC3 /* Info.plist in Sources */,
-				8C10DA9CD170CE74E5D1EEFBB0ECE80D /* LoopdSDK in Sources */,
+				5E126B24D53FA29F8787BC3AB86E4B91 /* CodeDirectory in Sources */,
+				6575FD57EDAA1104D3BC32C004914FE4 /* CodeRequirements in Sources */,
+				5FB3DFD48B79C7FB10D7595BF728246A /* CodeResources in Sources */,
+				6DEFE75D224125B35C6D6366A3730036 /* CodeSignature in Sources */,
+				9F8E43551F73689B92C6C56962CD3864 /* Info.plist in Sources */,
+				747382A32A1B90716F880A74BA59AA1A /* LoopdSDK in Sources */,
 				E25D0F5C57A6148F3184CA6154FC9803 /* LoopdSDK-dummy.m in Sources */,
-				C451C1944769099DCF9D75773CB3D945 /* module.modulemap in Sources */,
+				F3EDD66B4173E970A3BF21E8B4CE21D8 /* module.modulemap in Sources */,
 				68888130EAC6F13AEF5F72F3D72CD63E /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +359,7 @@
 		};
 		B7C294E5051524258CE6C29D0746580F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6E0A9C79FAD7FB4E610092844C7CC5 /* LoopdSDK.xcconfig */;
+			baseConfigurationReference = C5AEA0A455A3C53015AAA4DC614FFB67 /* LoopdSDK.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LoopdSDK/LoopdSDK-prefix.pch";
@@ -377,7 +377,7 @@
 		};
 		EA9FB39191EB54CCFDEBDC471D9702D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6E0A9C79FAD7FB4E610092844C7CC5 /* LoopdSDK.xcconfig */;
+			baseConfigurationReference = C5AEA0A455A3C53015AAA4DC614FFB67 /* LoopdSDK.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LoopdSDK/LoopdSDK-prefix.pch";
