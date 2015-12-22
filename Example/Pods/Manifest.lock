@@ -1,0 +1,10 @@
+PODS:
+  - LoopdSDK (1.0.1)
+
+DEPENDENCIES:
+  - LoopdSDK
+
+SPEC CHECKSUMS:
+  LoopdSDK: f2f3f0967189f942bbbf71c91cbd4cd50f44e1b1
+
+COCOAPODS: 0.39.0
