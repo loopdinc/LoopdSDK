@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44B1D719A5B9AE5C00E76848814E1370 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2867321C8094BEE6F4BCD0D0A8935E71 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B25D657139C81B35A87B99049C8BF4 /* ReplaceMe.m */; };
+		30A0D55B7C5BCA93243CEBB782F62C3D /* LoopdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B9FB5D860F47DAB1E418D425EF3478 /* LoopdSDK-dummy.m */; };
 		6534C0B609D397394CB177566F445843 /* Pods-LoopdSDK_Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F0490504A19BE374D305D7ACB7D0D /* Pods-LoopdSDK_Demo-dummy.m */; };
+		85720B4851960996F971D019EF24C502 /* LCContactExchangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0060EF07BC780EC4CA6CF294FAC56531 /* LCContactExchangeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904611193861967ED43ABFFF0B57EF08 /* LCBadgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6A945A44E6AF37B6EE18CE3B3078C9 /* LCBadgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9234118FAD1C66490DB0A739C577B1DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A3E35692ADF6A444C87C47431411AA63 /* LoopdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 535C6DF90594FA9611F84F9932C15205 /* LoopdSDK-dummy.m */; };
-		FF0EDEE05035C07A6C3386B893C0C63D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3735C67AB40A6ED3B8220341FF9ECD /* ReplaceMe.m */; };
+		9384A1E3DC938C84AECC2A204230B18F /* LoopdSDK in Sources */ = {isa = PBXBuildFile; fileRef = 24E0B6BF962FB8ABD889CBA5BC24EE8B /* LoopdSDK */; };
+		95D5BB8B15E0D1AADF67EDF0F48978D5 /* LoopdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 780D68185AB8F3FD4453113917AA8325 /* LoopdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9786EED5648F0B1BD44EFBD921F8CD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AA776129DD04CD7EDC436EC301056B28 /* LCScanningConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A84081190CDE9F709A78DFCEB3969ED4 /* LCScanningConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0A4C21EA2BFC7F71CDCBB2FF7C13C67 /* LCBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8DB9525711523B3ABCDFC968889A69 /* LCBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3C7C3F62A1A39AFA56CB57FA691935A /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F3DAAA0CDFC1DE1F9CC8A293C5ECE655 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,30 +26,45 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8C1D09C3D68B0346E0F20D3877D7D6A3;
+			remoteGlobalIDString = AB039347532FC0A8B810A7D1206BC58D;
 			remoteInfo = LoopdSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0060EF07BC780EC4CA6CF294FAC56531 /* LCContactExchangeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCContactExchangeManager.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCContactExchangeManager.h; sourceTree = "<group>"; };
 		017CFCE181817DCB5359AF0F19B1F662 /* libLoopdSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLoopdSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1661A2A313ABDF145A2A9AD2574DFC21 /* LoopdSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoopdSDK.xcconfig; sourceTree = "<group>"; };
+		1D6A945A44E6AF37B6EE18CE3B3078C9 /* LCBadgeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadgeManager.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCBadgeManager.h; sourceTree = "<group>"; };
+		1E8742CB9E5A56FC3343CA787CEF6660 /* LoopdSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoopdSDK-prefix.pch"; sourceTree = "<group>"; };
+		24E0B6BF962FB8ABD889CBA5BC24EE8B /* LoopdSDK */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = LoopdSDK; path = Pod/Classes/LoopdSDK.framework/LoopdSDK; sourceTree = "<group>"; };
 		38521A80B2421371CCB9BA6D35546209 /* Pods-LoopdSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoopdSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4241968FC91DB4E715B5E2A6EEBC0CB0 /* Pods-LoopdSDK_Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoopdSDK_Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		535C6DF90594FA9611F84F9932C15205 /* LoopdSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoopdSDK-dummy.m"; sourceTree = "<group>"; };
+		55B9FB5D860F47DAB1E418D425EF3478 /* LoopdSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoopdSDK-dummy.m"; sourceTree = "<group>"; };
 		604F0490504A19BE374D305D7ACB7D0D /* Pods-LoopdSDK_Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoopdSDK_Demo-dummy.m"; sourceTree = "<group>"; };
 		6C8756C6BBE9A0C3F119A11935D4EDF8 /* Pods-LoopdSDK_Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoopdSDK_Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		75A21768E5C314C2EFFD6EC1EB705BBF /* LoopdSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoopdSDK.xcconfig; sourceTree = "<group>"; };
+		780D68185AB8F3FD4453113917AA8325 /* LoopdSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoopdSDK.h; path = Pod/Classes/LoopdSDK.framework/Headers/LoopdSDK.h; sourceTree = "<group>"; };
 		8606D51D5C7E065A683677FB4FCE0A95 /* Pods-LoopdSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoopdSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		9A8DB9525711523B3ABCDFC968889A69 /* LCBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCBadge.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCBadge.h; sourceTree = "<group>"; };
 		9ADAB796F804F4F96AB5C7343DDB5285 /* libPods-LoopdSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoopdSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF3735C67AB40A6ED3B8220341FF9ECD /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		A84081190CDE9F709A78DFCEB3969ED4 /* LCScanningConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCScanningConfig.h; path = Pod/Classes/LoopdSDK.framework/Headers/LCScanningConfig.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4DFB9A7D9E37EDBEDC19229DA7CF932 /* Pods-LoopdSDK_Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoopdSDK_Demo-frameworks.sh"; sourceTree = "<group>"; };
 		D133BAB259D6BBE6C419FD972C703F61 /* Pods-LoopdSDK_Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoopdSDK_Demo-resources.sh"; sourceTree = "<group>"; };
-		EC2974EFEA39C4B828875DF4BDA62A12 /* LoopdSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoopdSDK-prefix.pch"; sourceTree = "<group>"; };
+		F3DAAA0CDFC1DE1F9CC8A293C5ECE655 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Classes/LoopdSDK.framework/Info.plist; sourceTree = "<group>"; };
+		F4B25D657139C81B35A87B99049C8BF4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B1539E9807C6066EF987377CE44239A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786EED5648F0B1BD44EFBD921F8CD23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C93B30BB18FA8E94BF4D5D7A4706943C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,26 +73,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF8A0F8209B08BFDD6FFF93A9DD9B1F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44B1D719A5B9AE5C00E76848814E1370 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622AF56EB724F62C2C0513DFC1D95548 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1661A2A313ABDF145A2A9AD2574DFC21 /* LoopdSDK.xcconfig */,
+				55B9FB5D860F47DAB1E418D425EF3478 /* LoopdSDK-dummy.m */,
+				1E8742CB9E5A56FC3343CA787CEF6660 /* LoopdSDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LoopdSDK";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C9424DB946498DF429E48546231C1088 /* Pods */,
+				8FB374AD89311E15CB779FF21BCA5641 /* Pods */,
 				F9762694582D79A767A92E1DAE8F32EC /* Products */,
 				E052C3CB54473CCC5CEBA983FD5BE2C2 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8FB374AD89311E15CB779FF21BCA5641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FE11368C8937D6174FDC4C6F4246DEB /* LoopdSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FE11368C8937D6174FDC4C6F4246DEB /* LoopdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAAA0CDFC1DE1F9CC8A293C5ECE655 /* Info.plist */,
+				9A8DB9525711523B3ABCDFC968889A69 /* LCBadge.h */,
+				1D6A945A44E6AF37B6EE18CE3B3078C9 /* LCBadgeManager.h */,
+				0060EF07BC780EC4CA6CF294FAC56531 /* LCContactExchangeManager.h */,
+				A84081190CDE9F709A78DFCEB3969ED4 /* LCScanningConfig.h */,
+				24E0B6BF962FB8ABD889CBA5BC24EE8B /* LoopdSDK */,
+				780D68185AB8F3FD4453113917AA8325 /* LoopdSDK.h */,
+				F4B25D657139C81B35A87B99049C8BF4 /* ReplaceMe.m */,
+				622AF56EB724F62C2C0513DFC1D95548 /* Support Files */,
+			);
+			path = LoopdSDK;
 			sourceTree = "<group>";
 		};
 		A3A4B6622092E92CCD36AFC8C670705C /* Pods-LoopdSDK_Demo */ = {
@@ -104,40 +153,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C9424DB946498DF429E48546231C1088 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F0679B1A8596E46D13750B19032906B6 /* LoopdSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CF80081DE634B20228CCDAE902E311EC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75A21768E5C314C2EFFD6EC1EB705BBF /* LoopdSDK.xcconfig */,
-				535C6DF90594FA9611F84F9932C15205 /* LoopdSDK-dummy.m */,
-				EC2974EFEA39C4B828875DF4BDA62A12 /* LoopdSDK-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LoopdSDK";
-			sourceTree = "<group>";
-		};
 		E052C3CB54473CCC5CEBA983FD5BE2C2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				A3A4B6622092E92CCD36AFC8C670705C /* Pods-LoopdSDK_Demo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F0679B1A8596E46D13750B19032906B6 /* LoopdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				AF3735C67AB40A6ED3B8220341FF9ECD /* ReplaceMe.m */,
-				CF80081DE634B20228CCDAE902E311EC /* Support Files */,
-			);
-			path = LoopdSDK;
 			sourceTree = "<group>";
 		};
 		F9762694582D79A767A92E1DAE8F32EC /* Products */ = {
@@ -151,13 +172,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F1B466615BF190CC064A5AEA8B23642F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A4C21EA2BFC7F71CDCBB2FF7C13C67 /* LCBadge.h in Headers */,
+				904611193861967ED43ABFFF0B57EF08 /* LCBadgeManager.h in Headers */,
+				85720B4851960996F971D019EF24C502 /* LCContactExchangeManager.h in Headers */,
+				AA776129DD04CD7EDC436EC301056B28 /* LCScanningConfig.h in Headers */,
+				95D5BB8B15E0D1AADF67EDF0F48978D5 /* LoopdSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8C1D09C3D68B0346E0F20D3877D7D6A3 /* LoopdSDK */ = {
+		AB039347532FC0A8B810A7D1206BC58D /* LoopdSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F25DBF274B6DF18A946677C457C517D /* Build configuration list for PBXNativeTarget "LoopdSDK" */;
+			buildConfigurationList = E44B0C5F010D210861F8AF4D4D8B91DC /* Build configuration list for PBXNativeTarget "LoopdSDK" */;
 			buildPhases = (
-				2029924086CB82B1946131F09872B46B /* Sources */,
-				DF8A0F8209B08BFDD6FFF93A9DD9B1F4 /* Frameworks */,
+				7FB84A5678B6C04C1B2C5A415DCEBC6E /* Sources */,
+				4B1539E9807C6066EF987377CE44239A /* Frameworks */,
+				F1B466615BF190CC064A5AEA8B23642F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -206,27 +243,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C1D09C3D68B0346E0F20D3877D7D6A3 /* LoopdSDK */,
+				AB039347532FC0A8B810A7D1206BC58D /* LoopdSDK */,
 				B87E7EF3732D611A969D9CD315DBC05A /* Pods-LoopdSDK_Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2029924086CB82B1946131F09872B46B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3E35692ADF6A444C87C47431411AA63 /* LoopdSDK-dummy.m in Sources */,
-				FF0EDEE05035C07A6C3386B893C0C63D /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6BADF42E91DE3B9CA816BEBC2F6B20F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6534C0B609D397394CB177566F445843 /* Pods-LoopdSDK_Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB84A5678B6C04C1B2C5A415DCEBC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C7C3F62A1A39AFA56CB57FA691935A /* Info.plist in Sources */,
+				9384A1E3DC938C84AECC2A204230B18F /* LoopdSDK in Sources */,
+				30A0D55B7C5BCA93243CEBB782F62C3D /* LoopdSDK-dummy.m in Sources */,
+				2867321C8094BEE6F4BCD0D0A8935E71 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,19 +275,36 @@
 		BCB913FB96FBA188E3CC2F85B12884AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LoopdSDK;
-			target = 8C1D09C3D68B0346E0F20D3877D7D6A3 /* LoopdSDK */;
+			target = AB039347532FC0A8B810A7D1206BC58D /* LoopdSDK */;
 			targetProxy = 0503AAA2725E1423F705364D38F98D9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7B76C1C0094757E809974B1E159DA4F9 /* Debug */ = {
+		0F06E0DC1E1521D14D60282DE78A8730 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A21768E5C314C2EFFD6EC1EB705BBF /* LoopdSDK.xcconfig */;
+			baseConfigurationReference = 38521A80B2421371CCB9BA6D35546209 /* Pods-LoopdSDK_Demo.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3C8E024A622F385E1CE9A06FE64600C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1661A2A313ABDF145A2A9AD2574DFC21 /* LoopdSDK.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LoopdSDK/LoopdSDK-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -260,7 +316,7 @@
 			};
 			name = Debug;
 		};
-		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,20 +348,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		8DC5C3D154DB2A92CD585A0E9BAFA390 /* Release */ = {
+		D9BB6AD7783C3F0F23544510F7BD77AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A21768E5C314C2EFFD6EC1EB705BBF /* LoopdSDK.xcconfig */;
+			baseConfigurationReference = 1661A2A313ABDF145A2A9AD2574DFC21 /* LoopdSDK.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LoopdSDK/LoopdSDK-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -317,24 +373,7 @@
 			};
 			name = Release;
 		};
-		C2C7BE3AA01D62947034DD09E8A0F4D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8606D51D5C7E065A683677FB4FCE0A95 /* Pods-LoopdSDK_Demo.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,21 +400,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D8D471F97B05C4480F8DE1FAA8CBC11D /* Debug */ = {
+		FE5575A17D6DE405B8BE3772C446AE5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38521A80B2421371CCB9BA6D35546209 /* Pods-LoopdSDK_Demo.debug.xcconfig */;
+			baseConfigurationReference = 8606D51D5C7E065A683677FB4FCE0A95 /* Pods-LoopdSDK_Demo.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -383,7 +422,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -391,17 +430,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D1534490D941DCA47C62AC4314182AF /* Debug */,
-				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F25DBF274B6DF18A946677C457C517D /* Build configuration list for PBXNativeTarget "LoopdSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B76C1C0094757E809974B1E159DA4F9 /* Debug */,
-				8DC5C3D154DB2A92CD585A0E9BAFA390 /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -409,8 +439,17 @@
 		8BF1965834619DAF0231BC2BAE32DCD0 /* Build configuration list for PBXNativeTarget "Pods-LoopdSDK_Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8D471F97B05C4480F8DE1FAA8CBC11D /* Debug */,
-				C2C7BE3AA01D62947034DD09E8A0F4D9 /* Release */,
+				0F06E0DC1E1521D14D60282DE78A8730 /* Debug */,
+				FE5575A17D6DE405B8BE3772C446AE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44B0C5F010D210861F8AF4D4D8B91DC /* Build configuration list for PBXNativeTarget "LoopdSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3C8E024A622F385E1CE9A06FE64600C /* Debug */,
+				D9BB6AD7783C3F0F23544510F7BD77AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

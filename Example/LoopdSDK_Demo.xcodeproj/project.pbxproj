@@ -16,7 +16,6 @@
 		07468A251C27F3A20082A70F /* LoopdSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A241C27F3A20082A70F /* LoopdSDK_DemoTests.m */; };
 		07468A301C27F3A20082A70F /* LoopdSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A2F1C27F3A20082A70F /* LoopdSDK_DemoUITests.m */; };
 		07468A431C2805E70082A70F /* BadgeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A421C2805E70082A70F /* BadgeDetailVC.m */; };
-		07C372EE1C29431E0080EABC /* LoopdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C372ED1C29431E0080EABC /* LoopdSDK.framework */; };
 		6463B60FEECD3EC2085870F8 /* libPods-LoopdSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D9897878537839828EC370 /* libPods-LoopdSDK_Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		07468A311C27F3A20082A70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07468A411C2805E70082A70F /* BadgeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailVC.h; sourceTree = "<group>"; };
 		07468A421C2805E70082A70F /* BadgeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailVC.m; sourceTree = "<group>"; };
-		07C372ED1C29431E0080EABC /* LoopdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopdSDK.framework; sourceTree = "<group>"; };
 		0A2C040B5019CF268D066188 /* Pods-LoopdSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopdSDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoopdSDK_Demo/Pods-LoopdSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C2BA97C8436AA8A27FF244F6 /* Pods-LoopdSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopdSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoopdSDK_Demo/Pods-LoopdSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C372EE1C29431E0080EABC /* LoopdSDK.framework in Frameworks */,
 				6463B60FEECD3EC2085870F8 /* libPods-LoopdSDK_Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,7 +89,6 @@
 		074689FE1C27F3A20082A70F = {
 			isa = PBXGroup;
 			children = (
-				07C372ED1C29431E0080EABC /* LoopdSDK.framework */,
 				07468A091C27F3A20082A70F /* LoopdSDK_Demo */,
 				07468A231C27F3A20082A70F /* LoopdSDK_DemoTests */,
 				07468A2E1C27F3A20082A70F /* LoopdSDK_DemoUITests */,
@@ -498,7 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoopdSDK_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -516,7 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoopdSDK_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
