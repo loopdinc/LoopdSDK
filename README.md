@@ -80,7 +80,7 @@ If it's done. You can execute some commands to the badge.
 ### LCContactExchangeManager
 `LCContactExchangeManager` is a manager that help developer implement contact exchange more easier.
 ```objective-c
-@interface ContactExBgProcess () <LCContactExchangeManagerDelegate>
+@interface ViewController () <LCContactExchangeManagerDelegate>
 @property (strong, nonatomic) LCContactExchangeManager *contactExchangeManager;
 @end
 
