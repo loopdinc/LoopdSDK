@@ -5,10 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/LoopdSDK.svg?style=flat)](http://cocoapods.org/pods/LoopdSDK)
 [![Platform](https://img.shields.io/cocoapods/p/LoopdSDK.svg?style=flat)](http://cocoapods.org/pods/LoopdSDK)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 | Version | Minimum iOS Target  | 
 |:--------------------:|:---------------------------:|
@@ -24,6 +20,7 @@ pod "LoopdSDK"
 ```
 
 ## Usage
+Clone the repo, and the example project in the Example directory.
 ### LCBadgeManager
 `LCBadgeManager` is a basic manager than help developer to control Loopd Badge.
 ```objective-c
