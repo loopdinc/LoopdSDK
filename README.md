@@ -49,6 +49,22 @@ scanningConfig.isAllowDuplicatesKey = YES;
 [self.badgeManager startScanWithConfig:scanningConfig];
 ```
 
+Try to connect with the badge when did find the badge.
+If it's done. You can execute some commands to the badge.
+```objective-c
+#pragma mark - Badge Manager Delegate
+
+- (void)badgeManager:(LCBadgeManager *)badgeManager didDiscoverBadge:(LCBadge *)badge {
+    [self.badgeManager connectBadge:badge];
+}
+
+- (void)badgeManager:(LCBadgeManager *)badgeManager didConnectBadge:(LCBadge *)badge {
+    // turn on red LED
+    [self.badgeManager executeCommandCode:@"0F"];
+}
+```
+
+
 ### LCBadgeManagerDelegate
 ```objective-c
 @protocol LCBadgeManagerDelegate <NSObject>
