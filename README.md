@@ -115,6 +115,14 @@ If it's done. You can execute some commands to the badge.
 @end
 ```
 
+## Commands
+| command | action  | 
+|:-------:|:-------:|
+| 00 | Switch off both LEDs |
+| 0F | Switch on red LED |
+| F0 | Switch on yellow LED |
+| FF | Switch on both LEDs |
+
 ## Author
 
 Derrick, derrick@getloopd.com
