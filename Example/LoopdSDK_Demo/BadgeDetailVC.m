@@ -82,6 +82,20 @@
     UIAlertAction *turnOffAllLEDAction = [UIAlertAction actionWithTitle:@"Switch off Both Leds" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.badgeManager executeCommandCode:@"00"];
     }];
+    UIAlertAction *changeTransmissionPowerAction = [UIAlertAction actionWithTitle:@"Change transmission power" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self showChangeTransmissionPowerActionSheet];
+    }];
+    UIAlertAction *forceTheDeviceDisconnectAction = [UIAlertAction actionWithTitle:@"Force the device to disconnect" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"11"];
+    }];
+    UIAlertAction *getTheAmountOfFreeSpaceLeftAction = [UIAlertAction actionWithTitle:@"Get the amount of free space left" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *changeTheAdvertisementFrequencyAction = [UIAlertAction actionWithTitle:@"Change the advertisement frequency" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self changeTheAdvertisementFrequencyActionSheet];
+    }];
+    
+    // Cancel
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
@@ -90,6 +104,70 @@
     [alertController addAction:turnOffYellowLEDAction];
     [alertController addAction:turnOnAllLEDAction];
     [alertController addAction:turnOffAllLEDAction];
+    
+    [alertController addAction:changeTransmissionPowerAction];
+    [alertController addAction:forceTheDeviceDisconnectAction];
+    [alertController addAction:getTheAmountOfFreeSpaceLeftAction];
+    [alertController addAction:changeTheAdvertisementFrequencyAction];
+    
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)showChangeTransmissionPowerActionSheet {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Actions"
+                                                                             message:@"please choose one"
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *plus4Action = [UIAlertAction actionWithTitle:@"+4dBm" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"100004"];
+    }];
+    UIAlertAction *minus4Action = [UIAlertAction actionWithTitle:@"-4dBm" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"10FF04"];
+    }];
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertController addAction:plus4Action];
+    [alertController addAction:minus4Action];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)changeTheAdvertisementFrequencyActionSheet {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Actions"
+                                                                             message:@"please choose one"
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *advertise1TimesPerSecondAction = [UIAlertAction actionWithTitle:@"advertise 1 times per second" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"A001"];
+    }];
+    UIAlertAction *advertise2TimesPerSecondAction = [UIAlertAction actionWithTitle:@"advertise 2 times per second" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"A002"];
+    }];
+    UIAlertAction *advertise4TimesPerSecondAction = [UIAlertAction actionWithTitle:@"advertise 4 times per second" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"A004"];
+    }];
+    UIAlertAction *advertise8TimesPerSecondAction = [UIAlertAction actionWithTitle:@"advertise 8 times per second" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"A008"];
+    }];
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertController addAction:advertise1TimesPerSecondAction];
+    [alertController addAction:advertise2TimesPerSecondAction];
+    [alertController addAction:advertise4TimesPerSecondAction];
+    [alertController addAction:advertise8TimesPerSecondAction];
     [alertController addAction:cancelAction];
     
     [self presentViewController:alertController animated:YES completion:^{
