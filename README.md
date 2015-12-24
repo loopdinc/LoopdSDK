@@ -89,6 +89,15 @@ If it's done. You can execute some commands to the badge.
     self.contactExchangeManager.delegate = self;
     [self.contactExchangeManager startScanningWithBadgeId:badgeId];
 }
+
+#pragma mark - Contact Exchange Manager Delegate
+
+- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager
+    didUpdateExchangedBadgeIds:(NSArray *)exchangedBadgeIds
+                   targetBadge:(LCBadge *)targetBadge {
+    // targetBadge is the current badge
+    // exchangedBadgeIds is the array of other user's badge id
+}
 ```
 ### LCContactExchangeManagerDelegate
 ```objective-c
