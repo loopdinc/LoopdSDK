@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LoopdSDK"
-  s.version          = "1.0.5.2"
+  s.version          = "1.0.5.3"
   s.summary          = "A framework easy to use Loopd Badge"
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.vendored_frameworks = 'LoopdSDK.framework'
+  s.vendored_frameworks = 'Pod/Frameworks/LoopdSDK.framework'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
