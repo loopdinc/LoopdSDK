@@ -1,4 +1,4 @@
-# LoopdSDK
+# iOS-Loopd-SDK
 
 [![CI Status](http://img.shields.io/travis/Derrick/LoopdSDK.svg?style=flat)](https://travis-ci.org/Derrick/LoopdSDK)
 [![Version](https://img.shields.io/cocoapods/v/LoopdSDK.svg?style=flat)](http://cocoapods.org/pods/LoopdSDK)
