@@ -123,6 +123,13 @@ If it's done. You can execute some commands to the badge.
 | F0 | Switch on yellow LED |
 | FF | Switch on both LEDs |
 
+Example:
+```objective-c
+- (void)turnOnBothLEDs {
+    [self.badgeManager executeCommandCode:@"00"];
+}
+```
+
 ## Author
 
 Derrick, derrick@getloopd.com
