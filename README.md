@@ -122,6 +122,10 @@ If it's done. You can execute some commands to the badge.
 | 0F | Switch on red LED |
 | F0 | Switch on yellow LED |
 | FF | Switch on both LEDs |
+| 11 | Force the device to disconnect |
+| A0xx | advertise xx times per second |
+| 100004 | Change transmission power +4dBm |
+| 10FF04 | Change transmission power -4dBm |
 
 Example:
 ```objective-c
