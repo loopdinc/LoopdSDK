@@ -5,8 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/LoopdSDK.svg?style=flat)](http://cocoapods.org/pods/LoopdSDK)
 [![Platform](https://img.shields.io/cocoapods/p/LoopdSDK.svg?style=flat)](http://cocoapods.org/pods/LoopdSDK)
 
+## Description
+The Loopd Beacon SDK provides apis to interact with the Loopd Beacons from Android/iOS devices, and includes ranging, connecting, and writing and reading data between Loopd Beacons.
+
 ## Requirements
-| Version | Minimum iOS Target  | 
+| Version | Minimum iOS Target  |
 |:--------------------:|:---------------------------:|
 | 1.x | iOS 8 |
 
@@ -30,7 +33,7 @@ Clone the repo, and the example project in the Example directory.
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.badgeManager = [LCBadgeManager new];
     self.badgeManager.delegate = self;
     [self.badgeManager startScan];
@@ -42,7 +45,7 @@ You can also give some limitation to it!
 LCScanningConfig *scanningConfig = [LCScanningConfig new];
 scanningConfig.RSSI = -50;
 scanningConfig.isAllowDuplicatesKey = YES;
-    
+
 [self.badgeManager startScanWithConfig:scanningConfig];
 ```
 
@@ -83,7 +86,7 @@ If it's done. You can execute some commands to the badge.
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     NSString *badgeId = @"123abc";
     self.contactExchangeManager = [LCContactExchangeManager new];
     self.contactExchangeManager.delegate = self;
@@ -116,7 +119,7 @@ If it's done. You can execute some commands to the badge.
 ```
 
 ## Commands
-| command | action  | 
+| command | action  |
 |:-------:|:-------:|
 | 00 | Switch off both LEDs |
 | 0F | Switch on red LED |
