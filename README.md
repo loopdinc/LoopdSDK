@@ -25,7 +25,7 @@ pod "LoopdSDK"
 ## Usage
 Clone the repo, and the example project in the Example directory.
 ### LCBadgeManager
-`LCBadgeManager` is a basic manager than help developer to control Loopd Badge.
+`LCBadgeManager` is a basic manager than helps the developer to control the Loopd Badge.
 ```objective-c
 @interface ViewController () <LCBadgeManagerDelegate>
 @property (strong, nonatomic) LCBadgeManager *badgeManager;
@@ -39,7 +39,7 @@ Clone the repo, and the example project in the Example directory.
     [self.badgeManager startScan];
 }
 ```
-You can also give some limitation to it!
+You can also give limitations to it.
 ```objective-c
 // config
 LCScanningConfig *scanningConfig = [LCScanningConfig new];
@@ -49,8 +49,8 @@ scanningConfig.isAllowDuplicatesKey = YES;
 [self.badgeManager startScanWithConfig:scanningConfig];
 ```
 
-Try to connect with the badge when did find the badge.
-If it's done. You can execute some commands to the badge.
+Try to connect with the badge.
+When connected, you can execute commands to the badge.
 ```objective-c
 #pragma mark - Badge Manager Delegate
 
@@ -78,7 +78,7 @@ If it's done. You can execute some commands to the badge.
 ```
 
 ### LCContactExchangeManager
-`LCContactExchangeManager` is a manager that help developer implement contact exchange more easier.
+`LCContactExchangeManager` is a manager that helps the developer implement contact exchange easily.
 ```objective-c
 @interface ViewController () <LCContactExchangeManagerDelegate>
 @property (strong, nonatomic) LCContactExchangeManager *contactExchangeManager;
@@ -101,6 +101,7 @@ If it's done. You can execute some commands to the badge.
     // targetBadge is the current badge
     // exchangedBadgeIds is the array of other user's badge id
 }
+
 ```
 ### LCContactExchangeManagerDelegate
 ```objective-c
@@ -139,7 +140,7 @@ Example:
 
 ## Author
 
-Derrick, derrick@getloopd.com
+Derrick Chao, derrick@getloopd.com
 
 ## License
 
