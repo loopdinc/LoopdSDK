@@ -130,11 +130,25 @@ When connected, you can execute commands to the badge.
 | A0xx | advertise xx times per second |
 | 100004 | Change transmission power +4dBm |
 | 10FF04 | Change transmission power -4dBm |
+| 12 |  Get the mac address |
+| 14 |  Get the amount of free space left |
+| 20 |  Set the Local Name of the device |
+| 80 |  iBeacon mode |
+| 90 |  Eddystone mode |
+| 89 |  Advertise iBeacon and Eddystone Alternatively |
+
 
 Example:
 ```objective-c
 - (void)turnOnBothLEDs {
     [self.badgeManager executeCommandCode:@"00"];
+}
+
+- (void)advertise4timesPerSecond {
+    [self.badgeManager executeCommandCode:@"A004"];
+}
+- (void)advertise8timesPerSecond {
+    [self.badgeManager executeCommandCode:@"A008"];
 }
 ```
 
