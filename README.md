@@ -147,6 +147,7 @@ Example:
 - (void)advertise4timesPerSecond {
     [self.badgeManager executeCommandCode:@"A004"];
 }
+
 - (void)advertise8timesPerSecond {
     [self.badgeManager executeCommandCode:@"A008"];
 }
@@ -155,6 +156,7 @@ Example:
     // 0x80+16 bytes of Data + 1byte Major ID + 1 byte Minor ID
     [self.badgeManager executeCommandCode:@"80FFEEDDCCBBAA99887766554433221100ABCD"];
 }
+
 - (void)eddystoneExample {
     // 0x90+1 byte Frame Type + PDU based on Frame type
     [self.badgeManager executeCommandCode:@"9000CEAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBB"];
