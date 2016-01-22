@@ -95,6 +95,20 @@
         [self changeTheAdvertisementFrequencyActionSheet];
     }];
     
+    // new commands
+    UIAlertAction *iBeaconModeAction = [UIAlertAction actionWithTitle:@"iBeacon mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self iBeaconModePressed];
+    }];
+    UIAlertAction *eddystoneModeAction = [UIAlertAction actionWithTitle:@"Eddystone mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self eddystoneModePressed];
+    }];
+    UIAlertAction *iBeaconEddystoneAlternativelyAction = [UIAlertAction actionWithTitle:@"iBeacon and Eddystone Alternatively" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self iBeaconAndEddystoneModePressed];
+    }];
+    UIAlertAction *customAction = [UIAlertAction actionWithTitle:@"Custom command" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self customActionPressed];
+    }];
+    
     // Cancel
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
@@ -109,6 +123,11 @@
     [alertController addAction:forceTheDeviceDisconnectAction];
     [alertController addAction:getTheAmountOfFreeSpaceLeftAction];
     [alertController addAction:changeTheAdvertisementFrequencyAction];
+    
+    [alertController addAction:iBeaconModeAction];
+    [alertController addAction:eddystoneModeAction];
+    [alertController addAction:iBeaconEddystoneAlternativelyAction];
+    [alertController addAction:customAction];
     
     [alertController addAction:cancelAction];
     
@@ -169,6 +188,126 @@
     [alertController addAction:advertise4TimesPerSecondAction];
     [alertController addAction:advertise8TimesPerSecondAction];
     [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)iBeaconModePressed {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"iBeacon mode"
+                                                                             message:@"please enter command"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    // add text field
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = @"80";
+    }];
+    
+    // actions
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    // add ok action
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *commandTextField = alertController.textFields.firstObject;
+        [self.badgeManager executeCommandCode:commandTextField.text];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)eddystoneModePressed {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Eddystone mode"
+                                                                             message:@"please enter command"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    // add text field
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = @"90";
+    }];
+    
+    // actions
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    // add ok action
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *commandTextField = alertController.textFields.firstObject;
+        [self.badgeManager executeCommandCode:commandTextField.text];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)iBeaconAndEddystoneModePressed {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"iBeacon and Eddystone mode"
+                                                                             message:@"please enter command"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    // add text field
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = @"89";
+    }];
+    
+    // actions
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    // add ok action
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *commandTextField = alertController.textFields.firstObject;
+        [self.badgeManager executeCommandCode:commandTextField.text];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
+
+- (void)customActionPressed {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Custom Command"
+                                                                             message:@"please enter command"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    // add text field
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        
+    }];
+    
+    // actions
+    // Cancel
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    // add ok action
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *commandTextField = alertController.textFields.firstObject;
+        [self.badgeManager executeCommandCode:commandTextField.text];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
     
     [self presentViewController:alertController animated:YES completion:^{
         
