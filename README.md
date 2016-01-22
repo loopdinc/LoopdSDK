@@ -133,8 +133,8 @@ When connected, you can execute commands to the badge.
 | 12 |  Get the mac address |
 | 14 |  Get the amount of free space left |
 | 20 |  Set the Local Name of the device |
-| 80 |  iBeacon mode |
-| 90 |  Eddystone mode |
+| 80 |  iBeacon mode <br /> 0x80+16 bytes of Data + 1byte Major ID + 1 byte Minor ID |
+| 90 |  Eddystone mode <br /> 0x90+1 byte Frame Type + PDU based on Frame type |
 | 89 |  Advertise iBeacon and Eddystone Alternatively |
 
 
@@ -149,6 +149,15 @@ Example:
 }
 - (void)advertise8timesPerSecond {
     [self.badgeManager executeCommandCode:@"A008"];
+}
+
+- (void)iBeaconExample {
+    // 0x80+16 bytes of Data + 1byte Major ID + 1 byte Minor ID
+    [self.badgeManager executeCommandCode:@"80FFEEDDCCBBAA99887766554433221100ABCD"];
+}
+- (void)eddystoneExample {
+    // 0x90+1 byte Frame Type + PDU based on Frame type
+    [self.badgeManager executeCommandCode:@"9000CEAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBB"];
 }
 ```
 
