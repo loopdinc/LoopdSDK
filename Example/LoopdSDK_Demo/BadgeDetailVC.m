@@ -88,8 +88,11 @@
     UIAlertAction *forceTheDeviceDisconnectAction = [UIAlertAction actionWithTitle:@"Force the device to disconnect" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.badgeManager executeCommandCode:@"11"];
     }];
+    UIAlertAction *getMacAddressAction = [UIAlertAction actionWithTitle:@"Get the mac address" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"12"];
+    }];
     UIAlertAction *getTheAmountOfFreeSpaceLeftAction = [UIAlertAction actionWithTitle:@"Get the amount of free space left" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        [self.badgeManager executeCommandCode:@"14"];
     }];
     UIAlertAction *changeTheAdvertisementFrequencyAction = [UIAlertAction actionWithTitle:@"Change the advertisement frequency" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeTheAdvertisementFrequencyActionSheet];
@@ -121,6 +124,7 @@
     
     [alertController addAction:changeTransmissionPowerAction];
     [alertController addAction:forceTheDeviceDisconnectAction];
+    [alertController addAction:getMacAddressAction];
     [alertController addAction:getTheAmountOfFreeSpaceLeftAction];
     [alertController addAction:changeTheAdvertisementFrequencyAction];
     
@@ -201,7 +205,7 @@
     
     // add text field
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = @"80";
+        textField.text = @"80FFEEDDCCBBAA99887766554433221100ABCD";
     }];
     
     // actions
@@ -231,7 +235,7 @@
     
     // add text field
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = @"90";
+        textField.text = @"9000CEAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBB";
     }];
     
     // actions
@@ -255,29 +259,28 @@
 }
 
 - (void)iBeaconAndEddystoneModePressed {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"iBeacon and Eddystone mode"
-                                                                             message:@"please enter command"
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Advertise iBeacon and Eddystone alternatively"
+                                                                             message:@"please choose one action"
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
     
-    // add text field
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = @"89";
+    UIAlertAction *iBeaconAdvertisementAction = [UIAlertAction actionWithTitle:@"iBeacon advertisement" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"8900"];
     }];
-    
-    // actions
+    UIAlertAction *eddystoneAdvertismentAction = [UIAlertAction actionWithTitle:@"Eddystone advertisment" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"8901"];
+    }];
+    UIAlertAction *alternateAdvertisementAction = [UIAlertAction actionWithTitle:@"alternate advertisement of iBeacon and Eddystone" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.badgeManager executeCommandCode:@"89ff"];
+    }];
     // Cancel
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     
-    // add ok action
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        UITextField *commandTextField = alertController.textFields.firstObject;
-        [self.badgeManager executeCommandCode:commandTextField.text];
-    }];
-    
+    [alertController addAction:iBeaconAdvertisementAction];
+    [alertController addAction:eddystoneAdvertismentAction];
+    [alertController addAction:alternateAdvertisementAction];
     [alertController addAction:cancelAction];
-    [alertController addAction:okAction];
     
     [self presentViewController:alertController animated:YES completion:^{
         
@@ -328,6 +331,12 @@
 
 - (void)badgeManager:(LCBadgeManager *)badgeManager didFailToConnectBadge:(LCBadge *)badge error:(NSError *)error {
     NSLog(@"didFailToConnectBadge error:%@", error);
+}
+
+- (void)badgeManager:(LCBadgeManager *)badgeManager didUpdateValueForBadge:(LCBadge *)badge {
+    NSString *currentCommand = [[NSString alloc] initWithBytes:[badge.characteristic.value bytes] length:badge.characteristic.value.length encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"currentCommand: %@", currentCommand);
 }
 
 /*

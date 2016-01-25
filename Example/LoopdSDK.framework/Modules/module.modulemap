@@ -1,0 +1,6 @@
+framework module LoopdSDK {
+  umbrella header "LoopdSDK.h"
+
+  export *
+  module * { export * }
+}
