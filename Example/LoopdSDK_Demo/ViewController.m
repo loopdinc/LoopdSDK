@@ -132,6 +132,11 @@
 #pragma mark - Badge Manager Delegate
 
 - (void)badgeManager:(LCBadgeManager *)badgeManager didDiscoverBadge:(LCBadge *)badge {
+    NSLog(@"==============================================");
+    NSLog(@"advertisementData: %@", badge.manufacturerString);
+    NSLog(@"Discovered %@", badge.badgeId);
+    
+    
     // try to find an exist badge in self.badges
     LCBadge *existBadge = [self findBadgeById:badge.badgeId];
     if (existBadge) {

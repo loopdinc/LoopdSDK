@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LoopdSDK"
-  s.version          = "1.0.5.4"
+  s.version          = "1.0.5.5"
   s.summary          = "A framework easy to use Loopd Badge"
 
 # This description is used to generate tags and improve search results.
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = "A framework to control Loopd Badge."
 
-  s.homepage         = "https://github.com/loopdinc/LoopdSDK"
+  s.homepage         = "https://github.com/loopdinc/iOS-Loopd-SDK"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Derrick" => "derrick@getloopd.com" }
-  s.source           = { :git => "https://github.com/loopdinc/LoopdSDK.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/loopdinc/iOS-Loopd-SDK.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
