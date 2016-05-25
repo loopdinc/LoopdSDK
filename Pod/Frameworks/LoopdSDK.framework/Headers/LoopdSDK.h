@@ -7,6 +7,7 @@
 //
 
 #import "LCBadge.h"
+
 #import "LCBadgeManager.h"
 #import "LCContactExchangeManager.h"
 #import "LCScanningConfig.h"
