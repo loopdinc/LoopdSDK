@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LoopdSDK"
-  s.version          = "1.0.7"
+  s.version          = "1.0.9"
   s.summary          = "A framework easy to use Loopd Badge"
 
 # This description is used to generate tags and improve search results.

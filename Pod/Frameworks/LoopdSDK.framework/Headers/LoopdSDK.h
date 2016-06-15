@@ -6,11 +6,10 @@
 //  Copyright (c) 2015年 Loopd. All rights reserved.
 //
 
-#import "LCBadge.h"
-
-#import "LCBadgeManager.h"
-#import "LCContactExchangeManager.h"
-#import "LCScanningConfig.h"
+#import <LoopdSDK/LCBadge.h>
+#import <LoopdSDK/LCBadgeManager.h.h>
+#import <LoopdSDK/LCContactExchangeManager.h.h>
+#import <LoopdSDK/LCScanningConfig.h.h>
 
 //! Project version number for LoopdBadgeSDK.
 FOUNDATION_EXPORT double LoopdBadgeSDKVersionNumber;
