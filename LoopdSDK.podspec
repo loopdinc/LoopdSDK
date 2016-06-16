@@ -29,14 +29,13 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  #s.resource_bundles = {
-  #  'LoopdSDK' => ['Pod/Assets/*.png']
-  #}
+  s.resource_bundles = {
+    'LoopdSDK' => ['Pod/Assets/*.png', 'Pod/Frameworks/LoopdSDK.framework']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.frameworks = 'LoopdSDK'
-   s.vendored_frameworks = 'LoopdSDK.framework'
-
+  # s.frameworks = 'LoopdSDK'
+  # s.vendored_frameworks = 'Pod/Frameworks/LoopdSDK.framework'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
