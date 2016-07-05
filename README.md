@@ -15,12 +15,15 @@ The Loopd Beacon SDK provides apis to interact with the Loopd Beacons from Andro
 
 ## Installation
 
-LoopdSDK is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+<!--LoopdSDK is available through [CocoaPods](http://cocoapods.org). To install-->
+<!--it, simply add the following line to your Podfile:-->
 
-```ruby
-pod "LoopdSDK"
-```
+<!--```ruby-->
+<!--pod "LoopdSDK"-->
+<!--```-->
+
+Drag the ./pods/LoopdSDK.framework file into your project.
+
 
 ## Usage
 Clone the repo, and the example project in the Example directory.
