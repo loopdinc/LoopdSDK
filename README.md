@@ -22,7 +22,7 @@ The Loopd Beacon SDK provides apis to interact with the Loopd Beacons from Andro
 <!--pod "LoopdSDK"-->
 <!--```-->
 
-Drag the ./pods/LoopdSDK.framework file into your project.
+Drag the ./Pod/LoopdSDK.framework file into your project.
 
 
 ## Usage
