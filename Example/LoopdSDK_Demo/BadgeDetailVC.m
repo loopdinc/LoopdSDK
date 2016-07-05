@@ -70,44 +70,44 @@
                                                                              message:@"please choose one"
                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
     
-    UIAlertAction *turnOnRedLEDAction = [UIAlertAction actionWithTitle:@"Switch on Red Led" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.badgeManager executeCommandCode:@"0F"];
-    }];
-    UIAlertAction *turnOffYellowLEDAction = [UIAlertAction actionWithTitle:@"Switch on Yellow Led" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.badgeManager executeCommandCode:@"F0"];
-    }];
+//    UIAlertAction *turnOnRedLEDAction = [UIAlertAction actionWithTitle:@"Switch on Red Led" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self.badgeManager executeCommandCode:@"0F"];
+//    }];
+//    UIAlertAction *turnOffYellowLEDAction = [UIAlertAction actionWithTitle:@"Switch on Yellow Led" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self.badgeManager executeCommandCode:@"F0"];
+//    }];
     UIAlertAction *turnOnAllLEDAction = [UIAlertAction actionWithTitle:@"Switch Both Leds" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.badgeManager executeCommandCode:@"FF"];
     }];
     UIAlertAction *turnOffAllLEDAction = [UIAlertAction actionWithTitle:@"Switch off Both Leds" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.badgeManager executeCommandCode:@"00"];
     }];
-    UIAlertAction *changeTransmissionPowerAction = [UIAlertAction actionWithTitle:@"Change transmission power" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self showChangeTransmissionPowerActionSheet];
-    }];
+//    UIAlertAction *changeTransmissionPowerAction = [UIAlertAction actionWithTitle:@"Change transmission power" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self showChangeTransmissionPowerActionSheet];
+//    }];
     UIAlertAction *forceTheDeviceDisconnectAction = [UIAlertAction actionWithTitle:@"Force the device to disconnect" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.badgeManager executeCommandCode:@"11"];
     }];
-    UIAlertAction *getMacAddressAction = [UIAlertAction actionWithTitle:@"Get the mac address" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.badgeManager executeCommandCode:@"12"];
-    }];
-    UIAlertAction *getTheAmountOfFreeSpaceLeftAction = [UIAlertAction actionWithTitle:@"Get the amount of free space left" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.badgeManager executeCommandCode:@"14"];
-    }];
+//    UIAlertAction *getMacAddressAction = [UIAlertAction actionWithTitle:@"Get the mac address" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self.badgeManager executeCommandCode:@"12"];
+//    }];
+//    UIAlertAction *getTheAmountOfFreeSpaceLeftAction = [UIAlertAction actionWithTitle:@"Get the amount of free space left" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self.badgeManager executeCommandCode:@"14"];
+//    }];
     UIAlertAction *changeTheAdvertisementFrequencyAction = [UIAlertAction actionWithTitle:@"Change the advertisement frequency" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeTheAdvertisementFrequencyActionSheet];
     }];
-    
-    // new commands
-    UIAlertAction *iBeaconModeAction = [UIAlertAction actionWithTitle:@"iBeacon mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self iBeaconModePressed];
-    }];
-    UIAlertAction *eddystoneModeAction = [UIAlertAction actionWithTitle:@"Eddystone mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self eddystoneModePressed];
-    }];
-    UIAlertAction *iBeaconEddystoneAlternativelyAction = [UIAlertAction actionWithTitle:@"iBeacon and Eddystone Alternatively" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self iBeaconAndEddystoneModePressed];
-    }];
+//
+//    // new commands
+//    UIAlertAction *iBeaconModeAction = [UIAlertAction actionWithTitle:@"iBeacon mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self iBeaconModePressed];
+//    }];
+//    UIAlertAction *eddystoneModeAction = [UIAlertAction actionWithTitle:@"Eddystone mode" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self eddystoneModePressed];
+//    }];
+//    UIAlertAction *iBeaconEddystoneAlternativelyAction = [UIAlertAction actionWithTitle:@"iBeacon and Eddystone Alternatively" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [self iBeaconAndEddystoneModePressed];
+//    }];
     UIAlertAction *customAction = [UIAlertAction actionWithTitle:@"Custom command" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self customActionPressed];
     }];
@@ -117,20 +117,20 @@
         
     }];
     
-    [alertController addAction:turnOnRedLEDAction];
-    [alertController addAction:turnOffYellowLEDAction];
+//    [alertController addAction:turnOnRedLEDAction];
+//    [alertController addAction:turnOffYellowLEDAction];
     [alertController addAction:turnOnAllLEDAction];
     [alertController addAction:turnOffAllLEDAction];
     
-    [alertController addAction:changeTransmissionPowerAction];
+//    [alertController addAction:changeTransmissionPowerAction];
     [alertController addAction:forceTheDeviceDisconnectAction];
-    [alertController addAction:getMacAddressAction];
-    [alertController addAction:getTheAmountOfFreeSpaceLeftAction];
+//    [alertController addAction:getMacAddressAction];
+//    [alertController addAction:getTheAmountOfFreeSpaceLeftAction];
     [alertController addAction:changeTheAdvertisementFrequencyAction];
     
-    [alertController addAction:iBeaconModeAction];
-    [alertController addAction:eddystoneModeAction];
-    [alertController addAction:iBeaconEddystoneAlternativelyAction];
+//    [alertController addAction:iBeaconModeAction];
+//    [alertController addAction:eddystoneModeAction];
+//    [alertController addAction:iBeaconEddystoneAlternativelyAction];
     [alertController addAction:customAction];
     
     [alertController addAction:cancelAction];
@@ -336,6 +336,7 @@
 - (void)badgeManager:(LCBadgeManager *)badgeManager didUpdateValueForBadge:(LCBadge *)badge {
     NSString *currentCommand = [[NSString alloc] initWithBytes:[badge.characteristic.value bytes] length:badge.characteristic.value.length encoding:NSUTF8StringEncoding];
     
+    NSLog(@"didUpdateValueForBadge");
     NSLog(@"currentCommand: %@", currentCommand);
 }
 

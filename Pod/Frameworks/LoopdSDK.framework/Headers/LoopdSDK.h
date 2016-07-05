@@ -7,9 +7,9 @@
 //
 
 #import <LoopdSDK/LCBadge.h>
-#import <LoopdSDK/LCBadgeManager.h.h>
-#import <LoopdSDK/LCContactExchangeManager.h.h>
-#import <LoopdSDK/LCScanningConfig.h.h>
+#import <LoopdSDK/LCBadgeManager.h>
+#import <LoopdSDK/LCContactExchangeManager.h>
+#import <LoopdSDK/LCScanningConfig.h>
 
 //! Project version number for LoopdBadgeSDK.
 FOUNDATION_EXPORT double LoopdBadgeSDKVersionNumber;

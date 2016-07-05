@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07316B351D2BB4E8004E6FD0 /* LoopdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */; };
 		07468A0C1C27F3A20082A70F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A0B1C27F3A20082A70F /* main.m */; };
 		07468A0F1C27F3A20082A70F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A0E1C27F3A20082A70F /* AppDelegate.m */; };
 		07468A121C27F3A20082A70F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A111C27F3A20082A70F /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		07468A251C27F3A20082A70F /* LoopdSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A241C27F3A20082A70F /* LoopdSDK_DemoTests.m */; };
 		07468A301C27F3A20082A70F /* LoopdSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A2F1C27F3A20082A70F /* LoopdSDK_DemoUITests.m */; };
 		07468A431C2805E70082A70F /* BadgeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A421C2805E70082A70F /* BadgeDetailVC.m */; };
-		07C372F71C2A39570080EABC /* LoopdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C372F61C2A39570080EABC /* LoopdSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopdSDK.framework; sourceTree = "<group>"; };
 		07468A071C27F3A20082A70F /* LoopdSDK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopdSDK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07468A0B1C27F3A20082A70F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07468A0D1C27F3A20082A70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		07468A311C27F3A20082A70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07468A411C2805E70082A70F /* BadgeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailVC.h; sourceTree = "<group>"; };
 		07468A421C2805E70082A70F /* BadgeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailVC.m; sourceTree = "<group>"; };
-		07C372F61C2A39570080EABC /* LoopdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopdSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C372F71C2A39570080EABC /* LoopdSDK.framework in Frameworks */,
+				07316B351D2BB4E8004E6FD0 /* LoopdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		074689FE1C27F3A20082A70F = {
 			isa = PBXGroup;
 			children = (
-				07C372F61C2A39570080EABC /* LoopdSDK.framework */,
+				07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */,
 				07468A091C27F3A20082A70F /* LoopdSDK_Demo */,
 				07468A231C27F3A20082A70F /* LoopdSDK_DemoTests */,
 				07468A2E1C27F3A20082A70F /* LoopdSDK_DemoUITests */,
