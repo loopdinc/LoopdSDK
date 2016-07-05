@@ -90,10 +90,15 @@ When connected, you can execute commands to the badge.
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSString *badgeId = @"123abc";
     self.contactExchangeManager = [LCContactExchangeManager new];
     self.contactExchangeManager.delegate = self;
+    
+    // target badge id
+    NSString *badgeId = @"123abc";
     [self.contactExchangeManager startScanningWithBadgeId:badgeId];
+    
+    // if you need to scan all the badges, target badge id nil.
+    // [self.contactExchangeManager startScanningWithBadgeId:nil];
 }
 
 #pragma mark - Contact Exchange Manager Delegate
