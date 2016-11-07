@@ -6,7 +6,7 @@
 //  Copyright © 2015年 Loopd. All rights reserved.
 //
 
-#import <LoopdSDK/LoopdSDK.h>
+#import "Loopd-iOS-SDK.h"
 #import "ViewController.h"
 #import "BadgeDetailVC.h"
 

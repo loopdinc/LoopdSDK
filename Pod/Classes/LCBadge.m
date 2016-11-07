@@ -43,35 +43,4 @@
     return dictionary;
 }
 
-#pragma mark - Unsync Single Badge
-
-+ (void)unsyncBadge:(NSString *)badgeId eventAttendeeId:(NSString *)eventAttendeeId completion:(LoopdResultBlock)completion {
-    [[self class] unsyncBadge:badgeId eventAttendeeId:eventAttendeeId isReturned:YES completion:completion];
-}
-
-+ (void)unsyncBadge:(NSString *)badgeId eventAttendeeId:(NSString *)eventAttendeeId isReturned:(BOOL)isReturned completion:(LoopdResultBlock)completion {
-    NSString *currentEventId = [LCEventConfig currentEventConfig].eventId;
-    NSString *relativePath = [NSString stringWithFormat:@"events/%@/badges/%@", currentEventId, badgeId];
-    
-    NSString *deviceId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    
-    NSDictionary *params = @{@"source": @"IOS_R",
-                             @"sourceId": deviceId,
-                             @"isReturned": @(isReturned)};
-    
-    [[self class] requestMethod:LCRequestMethodDELETE
-                   relativePath:relativePath
-                     parameters:params
-                     completion:^(id responseObject, NSError *error) {
-                         if (error) {
-                             NSLog(@"unsyncSingleBadge error: %@", error);
-                             NSLog(@"unsyncSingleBadge error responseObject: %@", responseObject);
-                         }
-                         
-                         if (completion) {
-                             completion(responseObject, error);
-                         }
-                     }];
-}
-
 @end

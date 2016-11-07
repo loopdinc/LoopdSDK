@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07316B351D2BB4E8004E6FD0 /* LoopdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */; };
 		07468A0C1C27F3A20082A70F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A0B1C27F3A20082A70F /* main.m */; };
 		07468A0F1C27F3A20082A70F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A0E1C27F3A20082A70F /* AppDelegate.m */; };
 		07468A121C27F3A20082A70F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A111C27F3A20082A70F /* ViewController.m */; };
@@ -17,6 +16,11 @@
 		07468A251C27F3A20082A70F /* LoopdSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A241C27F3A20082A70F /* LoopdSDK_DemoTests.m */; };
 		07468A301C27F3A20082A70F /* LoopdSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A2F1C27F3A20082A70F /* LoopdSDK_DemoUITests.m */; };
 		07468A431C2805E70082A70F /* BadgeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468A421C2805E70082A70F /* BadgeDetailVC.m */; };
+		07A2FFAF1DD0600A00538DD5 /* LCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2FFA51DD0600A00538DD5 /* LCBadge.m */; };
+		07A2FFB01DD0600A00538DD5 /* LCBadgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2FFA71DD0600A00538DD5 /* LCBadgeManager.m */; };
+		07A2FFB11DD0600A00538DD5 /* LCContactExchangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2FFA91DD0600A00538DD5 /* LCContactExchangeManager.m */; };
+		07A2FFB21DD0600A00538DD5 /* LCReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2FFAB1DD0600A00538DD5 /* LCReachability.m */; };
+		07A2FFB31DD0600A00538DD5 /* LCScanningConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2FFAD1DD0600A00538DD5 /* LCScanningConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopdSDK.framework; sourceTree = "<group>"; };
 		07468A071C27F3A20082A70F /* LoopdSDK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopdSDK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07468A0B1C27F3A20082A70F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07468A0D1C27F3A20082A70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +59,17 @@
 		07468A311C27F3A20082A70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07468A411C2805E70082A70F /* BadgeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailVC.h; sourceTree = "<group>"; };
 		07468A421C2805E70082A70F /* BadgeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailVC.m; sourceTree = "<group>"; };
+		07A2FFA41DD0600A00538DD5 /* LCBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBadge.h; path = ../Pod/Classes/LCBadge.h; sourceTree = "<group>"; };
+		07A2FFA51DD0600A00538DD5 /* LCBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBadge.m; path = ../Pod/Classes/LCBadge.m; sourceTree = "<group>"; };
+		07A2FFA61DD0600A00538DD5 /* LCBadgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBadgeManager.h; path = ../Pod/Classes/LCBadgeManager.h; sourceTree = "<group>"; };
+		07A2FFA71DD0600A00538DD5 /* LCBadgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBadgeManager.m; path = ../Pod/Classes/LCBadgeManager.m; sourceTree = "<group>"; };
+		07A2FFA81DD0600A00538DD5 /* LCContactExchangeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCContactExchangeManager.h; path = ../Pod/Classes/LCContactExchangeManager.h; sourceTree = "<group>"; };
+		07A2FFA91DD0600A00538DD5 /* LCContactExchangeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCContactExchangeManager.m; path = ../Pod/Classes/LCContactExchangeManager.m; sourceTree = "<group>"; };
+		07A2FFAA1DD0600A00538DD5 /* LCReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCReachability.h; path = ../Pod/Classes/LCReachability.h; sourceTree = "<group>"; };
+		07A2FFAB1DD0600A00538DD5 /* LCReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCReachability.m; path = ../Pod/Classes/LCReachability.m; sourceTree = "<group>"; };
+		07A2FFAC1DD0600A00538DD5 /* LCScanningConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCScanningConfig.h; path = ../Pod/Classes/LCScanningConfig.h; sourceTree = "<group>"; };
+		07A2FFAD1DD0600A00538DD5 /* LCScanningConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCScanningConfig.m; path = ../Pod/Classes/LCScanningConfig.m; sourceTree = "<group>"; };
+		07A2FFB41DD0609800538DD5 /* Loopd-iOS-SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Loopd-iOS-SDK.h"; path = "../Pod/Classes/Loopd-iOS-SDK.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07316B351D2BB4E8004E6FD0 /* LoopdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +100,7 @@
 		074689FE1C27F3A20082A70F = {
 			isa = PBXGroup;
 			children = (
-				07316B341D2BB4E8004E6FD0 /* LoopdSDK.framework */,
+				07A2FFA31DD05FF000538DD5 /* Loopd-iOS-SDK */,
 				07468A091C27F3A20082A70F /* LoopdSDK_Demo */,
 				07468A231C27F3A20082A70F /* LoopdSDK_DemoTests */,
 				07468A2E1C27F3A20082A70F /* LoopdSDK_DemoUITests */,
@@ -148,6 +161,24 @@
 				07468A311C27F3A20082A70F /* Info.plist */,
 			);
 			path = LoopdSDK_DemoUITests;
+			sourceTree = "<group>";
+		};
+		07A2FFA31DD05FF000538DD5 /* Loopd-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				07A2FFB41DD0609800538DD5 /* Loopd-iOS-SDK.h */,
+				07A2FFA41DD0600A00538DD5 /* LCBadge.h */,
+				07A2FFA51DD0600A00538DD5 /* LCBadge.m */,
+				07A2FFA61DD0600A00538DD5 /* LCBadgeManager.h */,
+				07A2FFA71DD0600A00538DD5 /* LCBadgeManager.m */,
+				07A2FFA81DD0600A00538DD5 /* LCContactExchangeManager.h */,
+				07A2FFA91DD0600A00538DD5 /* LCContactExchangeManager.m */,
+				07A2FFAA1DD0600A00538DD5 /* LCReachability.h */,
+				07A2FFAB1DD0600A00538DD5 /* LCReachability.m */,
+				07A2FFAC1DD0600A00538DD5 /* LCScanningConfig.h */,
+				07A2FFAD1DD0600A00538DD5 /* LCScanningConfig.m */,
+			);
+			name = "Loopd-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		8FD72B6E10E1AE2C8E82960F /* Frameworks */ = {
@@ -288,7 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A2FFB11DD0600A00538DD5 /* LCContactExchangeManager.m in Sources */,
+				07A2FFB01DD0600A00538DD5 /* LCBadgeManager.m in Sources */,
+				07A2FFAF1DD0600A00538DD5 /* LCBadge.m in Sources */,
+				07A2FFB21DD0600A00538DD5 /* LCReachability.m in Sources */,
 				07468A121C27F3A20082A70F /* ViewController.m in Sources */,
+				07A2FFB31DD0600A00538DD5 /* LCScanningConfig.m in Sources */,
 				07468A431C2805E70082A70F /* BadgeDetailVC.m in Sources */,
 				07468A0F1C27F3A20082A70F /* AppDelegate.m in Sources */,
 				07468A0C1C27F3A20082A70F /* main.m in Sources */,
