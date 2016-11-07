@@ -179,4 +179,4 @@ Derrick Chao, derrick@getloopd.com
 
 ## License
 
-LoopdSDK is available under the MIT license. See the LICENSE file for more info.
+Loopd-iOS-SDK is available under the MIT license. See the LICENSE file for more info.
