@@ -51,6 +51,7 @@
  *  @param badgeId Target badge id.
  */
 - (void)startScanningWithBadgeId:(NSString *)badgeId;
+- (void)startScanningWithBadgeId:(NSString *)badgeId RSSI:(NSInteger)RSSI;
 
 /**
  *  Stop!

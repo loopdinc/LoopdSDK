@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+
+
+typedef void (^LoopdResultBlock)(id responseObject, NSError *error);
+
+
+
 @interface LCBadge : NSObject
 
 /**
