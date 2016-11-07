@@ -75,7 +75,7 @@
 
 - (void)startScanWithConfig:(LCScanningConfig *)config {
     self.scanningConfig = config;
-    CBCentralManagerState state = [self.centralManager state];
+    CBCentralManagerState state = (CBCentralManagerState)[self.centralManager state];
     if (state == CBCentralManagerStatePoweredOn) {
         [self retryScan];
     }
