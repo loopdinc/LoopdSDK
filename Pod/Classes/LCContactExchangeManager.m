@@ -117,8 +117,8 @@ typedef NS_ENUM(NSInteger, ScanMode) {
 //            NSLog(@"didDiscoverBadge: %@", badge);
             
             LCReachability *reachability = [LCReachability reachabilityForInternetConnection];
-            NetworkStatus networkStatus = [reachability currentReachabilityStatus];
-            if (networkStatus == NotReachable) {
+            LCNetworkStatus networkStatus = [reachability currentReachabilityStatus];
+            if (networkStatus == LCNotReachable) {
                 return;
             }
             
