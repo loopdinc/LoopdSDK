@@ -15,12 +15,12 @@
 - (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager
                 didDetectBadge:(LCBadge *)badge;
 
-- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager
-    didUpdateExchangedBadgeIds:(NSArray *)exchangedBadgeIds;
+- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager willContactExchangeWithBadge:(LCBadge *)badge;
+- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager didContactExchangeWithBadge:(LCBadge *)badge;
 
-- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager
-    didUpdateExchangedBadgeIds:(NSArray *)exchangedBadgeIds
-                   targetBadge:(LCBadge *)targetBadge;
+- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager didUpdateExchangedBadgeIds:(NSArray *)exchangedBadgeIds;
+
+- (void)contactExchangeManager:(LCContactExchangeManager *)contactExchangeManager didUpdateExchangedBadgeIds:(NSArray *)exchangedBadgeIds targetBadge:(LCBadge *)targetBadge;
 @end
 
 

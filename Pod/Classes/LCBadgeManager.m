@@ -22,7 +22,11 @@
 @end
 
 
-
+// commands
+NSString *const LCBadgeSwitchOffBothLEDsCommand = @"";
+NSString *const LCBadgeSwitchOnBothLEDsCommand = @"";
+NSString *const LCBadgeDisconnectCommand = @"11";
+NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
 
 
 @implementation LCBadgeManager

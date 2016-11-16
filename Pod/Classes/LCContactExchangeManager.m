@@ -114,7 +114,8 @@ typedef NS_ENUM(NSInteger, ScanMode) {
         }
             
         case ScanModeContactExchange: {
-//            NSLog(@"didDiscoverBadge: %@", badge);
+            NSLog(@"didDiscoverBadge: %@", badge);
+            [self.delegate contactExchangeManager:self didDetectBadge:badge];
             
             LCReachability *reachability = [LCReachability reachabilityForInternetConnection];
             LCNetworkStatus networkStatus = [reachability currentReachabilityStatus];
@@ -122,19 +123,17 @@ typedef NS_ENUM(NSInteger, ScanMode) {
                 return;
             }
             
-            if (self.badgeId && [badge.badgeId isEqualToString:self.badgeId]) {
-//                NSLog(@"didDiscoverBadge: %@", badge);
-            }
-            
             if (self.badgeId && [badge.badgeId isEqualToString:self.badgeId] && [badge.manufacturerString isEqualToString:@"<01>"]) {
                 [self stopScanning];
                 [self.exchangedBadgeIds setArray:@[]];
+                [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                     [self.badgeManager connectBadge:badge];
                 });
             } else if (!self.badgeId && [badge.manufacturerString isEqualToString:@"<01>"]) {
                 [self stopScanning];
                 [self.exchangedBadgeIds setArray:@[]];
+                [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                     [self.badgeManager connectBadge:badge];
                 });
@@ -163,7 +162,7 @@ typedef NS_ENUM(NSInteger, ScanMode) {
         commandCode = [commandCode stringByAppendingString:@"000000"];
     } else {
         // write 0x11 to disconnect with badge
-        [self.badgeManager executeCommandCode:@"11"];
+        [self.badgeManager executeCommandCode:LCBadgeDisconnectCommand];
 //        [self.badgeManager disconnectBadge];
         if (self.scanMode == ScanModeContactExchange) {
             [self startScanningWithBadgeId:self.badgeId];
@@ -172,7 +171,7 @@ typedef NS_ENUM(NSInteger, ScanMode) {
     NSLog(@"\n============ THE LAST COMMAND ===============\nrawCommand: %@\ncommandCode: %@", rawCommand, commandCode);
     
     if ([commandCode isEqualToString:@"07000000"] || [commandCode isEqualToString:@"11000000"] || [commandCode isEqualToString:@"00000000"]) {
-        [self.badgeManager executeCommandCode:@"07"];
+        [self.badgeManager executeCommandCode:LCBadgeReadContactExchangeDataCommand];
         
         // reset after delay
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
@@ -183,17 +182,20 @@ typedef NS_ENUM(NSInteger, ScanMode) {
                                didUpdateExchangedBadgeIds:self.exchangedBadgeIds
                                               targetBadge:badge];
                 });
-            } else if ([self.delegate respondsToSelector:@selector(contactExchangeManager:didUpdateExchangedBadgeIds:)]) {
+            }
+            
+            if ([self.delegate respondsToSelector:@selector(contactExchangeManager:didUpdateExchangedBadgeIds:)]) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.delegate contactExchangeManager:self
                                didUpdateExchangedBadgeIds:self.exchangedBadgeIds];
                 });
             }
             
-            // write 0x11 to disconnect with badge
-            [self.badgeManager executeCommandCode:@"11"];
+            [self.delegate contactExchangeManager:self didContactExchangeWithBadge:badge];
             
-//            [self.badgeManager disconnectBadge];
+            // write 0x11 to disconnect with badge
+            [self.badgeManager executeCommandCode:LCBadgeDisconnectCommand];
+            
             if (self.scanMode == ScanModeContactExchange) {
                 [self startScanningWithBadgeId:self.badgeId];
             }

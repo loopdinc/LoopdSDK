@@ -24,6 +24,15 @@
 
 
 
+// commands
+extern NSString *const LCBadgeSwitchOffBothLEDsCommand;
+extern NSString *const LCBadgeSwitchOnBothLEDsCommand;
+extern NSString *const LCBadgeDisconnectCommand;
+extern NSString *const LCBadgeReadContactExchangeDataCommand;
+
+
+
+
 
 @interface LCBadgeManager : NSObject
 
