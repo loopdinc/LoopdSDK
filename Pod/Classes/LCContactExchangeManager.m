@@ -115,7 +115,9 @@ typedef NS_ENUM(NSInteger, ScanMode) {
             
         case ScanModeContactExchange: {
             NSLog(@"didDiscoverBadge: %@", badge);
-            [self.delegate contactExchangeManager:self didDetectBadge:badge];
+            if ([self.delegate respondsToSelector:@selector(contactExchangeManager:didDetectBadge:)]) {
+                [self.delegate contactExchangeManager:self didDetectBadge:badge];
+            }
             
             LCReachability *reachability = [LCReachability reachabilityForInternetConnection];
             LCNetworkStatus networkStatus = [reachability currentReachabilityStatus];
@@ -126,14 +128,23 @@ typedef NS_ENUM(NSInteger, ScanMode) {
             if (self.badgeId && [badge.badgeId isEqualToString:self.badgeId] && [badge.manufacturerString isEqualToString:@"<01>"]) {
                 [self stopScanning];
                 [self.exchangedBadgeIds setArray:@[]];
-                [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
+                if ([self.delegate respondsToSelector:@selector(contactExchangeManager:willContactExchangeWithBadge:)]) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
+                    });
+                }
+                
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                     [self.badgeManager connectBadge:badge];
                 });
             } else if (!self.badgeId && [badge.manufacturerString isEqualToString:@"<01>"]) {
                 [self stopScanning];
                 [self.exchangedBadgeIds setArray:@[]];
-                [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
+                if ([self.delegate respondsToSelector:@selector(contactExchangeManager:willContactExchangeWithBadge:)]) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.delegate contactExchangeManager:self willContactExchangeWithBadge:badge];
+                    });
+                }
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                     [self.badgeManager connectBadge:badge];
                 });
@@ -191,7 +202,11 @@ typedef NS_ENUM(NSInteger, ScanMode) {
                 });
             }
             
-            [self.delegate contactExchangeManager:self didContactExchangeWithBadge:badge];
+            if ([self.delegate respondsToSelector:@selector(contactExchangeManager:didContactExchangeWithBadge:)]) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.delegate contactExchangeManager:self didContactExchangeWithBadge:badge];
+                });
+            }
             
             // write 0x11 to disconnect with badge
             [self.badgeManager executeCommandCode:LCBadgeDisconnectCommand];
