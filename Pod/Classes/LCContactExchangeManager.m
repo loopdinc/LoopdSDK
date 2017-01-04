@@ -114,7 +114,6 @@ typedef NS_ENUM(NSInteger, ScanMode) {
         }
             
         case ScanModeContactExchange: {
-            NSLog(@"didDiscoverBadge: %@", badge);
             if ([self.delegate respondsToSelector:@selector(contactExchangeManager:didDetectBadge:)]) {
                 [self.delegate contactExchangeManager:self didDetectBadge:badge];
             }
@@ -211,7 +210,8 @@ typedef NS_ENUM(NSInteger, ScanMode) {
             // write 0x11 to disconnect with badge
             [self.badgeManager executeCommandCode:LCBadgeDisconnectCommand];
             
-            if (self.scanMode == ScanModeContactExchange) {
+            // if try to scan all nearby badges
+            if (self.scanMode == ScanModeContactExchange && self.badgeId == nil) {
                 [self startScanningWithBadgeId:self.badgeId];
             }
         });
