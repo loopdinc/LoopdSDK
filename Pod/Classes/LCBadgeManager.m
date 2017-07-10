@@ -16,7 +16,6 @@
 
 
 @interface LCBadgeManager () <CBCentralManagerDelegate, CBPeripheralDelegate>
-@property (strong, nonatomic) CBCentralManager *centralManager;
 @property (strong, nonatomic) LCBadge *currentBadge;
 @property (nonatomic) LCScanningConfig *scanningConfig;
 @end

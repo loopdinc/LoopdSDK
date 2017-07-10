@@ -38,6 +38,8 @@ extern NSString *const LCBadgeReadContactExchangeDataCommand;
 
 @property (weak, nonatomic) id <LCBadgeManagerDelegate> delegate;
 
+@property (strong, nonatomic) CBCentralManager *centralManager;
+
 /**
  *  Start scan nearby bluetooth devices.
  */
