@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint LoopdSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint Loopd-iOS-SDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Loopd-iOS-SDK"
-  s.version          = “1.1.8”
+  s.version          = "1.1.8"
   s.summary          = "A framework easy to use Loopd Badge"
 
 # This description is used to generate tags and improve search results.
