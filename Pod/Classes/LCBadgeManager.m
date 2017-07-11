@@ -11,7 +11,8 @@
 #import "LCBadge.h"
 #import "LCScanningConfig.h"
 
-#define SERVICE_UUID                @"FB694B90-F49E-4597-8306-171BBA78F846"
+#define OTA_SERVICE_UUID                  @"9E5D1E47-5C13-43A0-8635-82AD38A1386F"
+#define LOOPD_SERVICE_UUID                @"FB694B90-F49E-4597-8306-171BBA78F846"
 
 
 
@@ -94,7 +95,7 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
     }
     [self stopScan];
     
-    CBUUID *uuid = [CBUUID UUIDWithString:SERVICE_UUID];
+    CBUUID *uuid = [CBUUID UUIDWithString:LOOPD_SERVICE_UUID];
     NSNumber *isAllowDuplicatesKey = [NSNumber numberWithBool:self.scanningConfig.isAllowDuplicatesKey];
     [self.centralManager scanForPeripheralsWithServices:@[uuid]
                                                 options:@{CBCentralManagerScanOptionAllowDuplicatesKey:isAllowDuplicatesKey}];
@@ -285,7 +286,11 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
     NSLog(@"didDiscoverBadge: %@", self.currentBadge.badgeId);
     if (!error) {
         
-        CBUUID *loopdServiceUUID = [CBUUID UUIDWithString:SERVICE_UUID];
+        CBUUID *otaServiceUUID = [CBUUID UUIDWithString:OTA_SERVICE_UUID];
+        CBService *otaService = [self getService:peripheral.services withUuid:otaServiceUUID];
+        [peripheral discoverCharacteristics:nil forService:otaService];
+        
+        CBUUID *loopdServiceUUID = [CBUUID UUIDWithString:LOOPD_SERVICE_UUID];
         CBService *loopdService = [self getService:peripheral.services withUuid:loopdServiceUUID];
         [peripheral discoverCharacteristics:nil forService:loopdService];
     } else {
