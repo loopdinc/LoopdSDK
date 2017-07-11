@@ -230,7 +230,7 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     NSLog(@"didConnectBadge: %@", self.currentBadge.badgeId);
     self.currentBadge.peripheral.delegate = self;
-    [self.currentBadge.peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
+    [self.currentBadge.peripheral discoverServices:nil];
 }
 
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
