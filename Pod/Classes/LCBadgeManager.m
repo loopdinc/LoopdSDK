@@ -123,6 +123,16 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
     }
 }
 
+- (CBService *)getService:(NSArray *)services withUuid:(CBUUID *)uuid {
+    for (int i=0; i < services.count; i++) {
+        CBService* service = services[i];
+        if ([service.UUID isEqual:uuid] ) {
+            return service;
+        }
+    }
+    return nil;
+}
+
 #pragma mark Command
 
 - (void)executeCommandCode:(NSString *)commandCode {
@@ -274,7 +284,10 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     NSLog(@"didDiscoverBadge: %@", self.currentBadge.badgeId);
     if (!error) {
-        [peripheral discoverCharacteristics:nil forService:peripheral.services.firstObject];
+        
+        CBUUID *loopdServiceUUID = [CBUUID UUIDWithString:SERVICE_UUID];
+        CBService *loopdService = [self getService:peripheral.services withUuid:loopdServiceUUID];
+        [peripheral discoverCharacteristics:nil forService:loopdService];
     } else {
         NSLog(@"peripheral didDiscoverServices error: %@", error);
     }
