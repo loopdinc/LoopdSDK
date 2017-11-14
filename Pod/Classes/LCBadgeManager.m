@@ -288,8 +288,9 @@ NSString *const LCBadgeReadContactExchangeDataCommand = @"07";
         
         CBUUID *otaServiceUUID = [CBUUID UUIDWithString:OTA_SERVICE_UUID];
         CBService *otaService = [self getService:peripheral.services withUuid:otaServiceUUID];
-        [peripheral discoverCharacteristics:nil forService:otaService];
-        
+        if(otaService != nil){
+            [peripheral discoverCharacteristics:nil forService:otaService];
+        }
         CBUUID *loopdServiceUUID = [CBUUID UUIDWithString:LOOPD_SERVICE_UUID];
         CBService *loopdService = [self getService:peripheral.services withUuid:loopdServiceUUID];
         [peripheral discoverCharacteristics:nil forService:loopdService];
